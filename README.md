@@ -12,7 +12,7 @@ Another thing to consider is the probability of one user to continue browsing - 
 ### Intuition
 We want to find the Importance Factor of page A.
 We say that M(A) is the set of pages that contain a link to A.
-We choose B such that B belongs M(A).
+We choose B such that B belongs to M(A).
 The probability of reaching page B influence the probability to reach page A. B has high Importance Factor, thus probability to reach page A rises.
 The number of links from B to another page influence the probability to reach A as well. B has a lot of links to variate pages, thus probability to reach page A falls.
 
@@ -22,7 +22,7 @@ Example:
 $ octave --no-gui
 > PageRank("tests/graph1", 0.85, 0.0001);
 ```
-where **"tests/graph1"** is the input file, **0.85** is the damoing factor and **0.0001** is the error degree that assures convergence (epsilon).
+where **"tests/graph1"** is the input file, **0.85** is the damping factor and **0.0001** is the error degree that assures convergence (epsilon).
 
 Results will be displayed in **"tests/graph1.out"** (the input file name with .out extension).
 
